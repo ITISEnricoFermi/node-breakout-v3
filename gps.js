@@ -19,7 +19,12 @@ class GPS {
     }
 
     getData() {
-        return this.lastState
+        if (this.lastState === null) return null
+        else return {
+            latitude: this.lastState.loc.geojson.coordinates[1],
+            longitude: this.lastState.loc.geojson.coordinates[0],
+            altitude: this.lastState.altitude
+        }
     }
 }
 
