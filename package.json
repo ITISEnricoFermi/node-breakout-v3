@@ -1,6 +1,6 @@
 {
   "name": "node-breakout-v3",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Node module for adafruit breakout v3 gps",
   "main": "gps.js",
   "scripts": {
@@ -16,8 +16,7 @@
     "breakout",
     "node"
   ],
-  "authors": [
-    {
+  "authors": [{
       "name": "Ernesto Montada",
       "email": "e.montada0@gmail.com"
     },
