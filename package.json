@@ -1,0 +1,38 @@
+{
+  "name": "node-breakout-v3",
+  "version": "0.0.1",
+  "description": "Node module for adafruit breakout v3 gps",
+  "main": "gps.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ITISEnricoFermi/node-breakout-v3.git"
+  },
+  "keywords": [
+    "gps",
+    "adafruit",
+    "breakout",
+    "node"
+  ],
+  "authors": [
+    {
+      "name": "Ernesto Montada",
+      "email": "e.montada0@gmail.com"
+    },
+    {
+      "name": "Hristo Kamenov",
+      "email": "hkamenov123@gmail.com"
+    }
+  ],
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ITISEnricoFermi/node-breakout-v3/issues"
+  },
+  "homepage": "https://github.com/ITISEnricoFermi/node-breakout-v3#readme",
+  "dependencies": {
+    "node-nmea": "^1.0.4",
+    "serialport": "^6.2.0"
+  }
+}
