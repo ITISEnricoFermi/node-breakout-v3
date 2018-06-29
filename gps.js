@@ -26,7 +26,19 @@ class GPS extends EventEmitter {
 
             this.parser.on('data', (data) => {
                 this.lastState = this.NodeNMEA.parse(data)
-                this.emit('data', this.lastState)
+                try {
+                    this.emit('data', {
+                        latitude: this.lastState.loc.geojson.coordinates[1],
+                        longitude: this.lastState.loc.geojson.coordinates[0],
+                        altitude: this.lastState.altitude
+                    })
+                } catch (e) {
+                    this.emit('data', {
+                        latitude: 0,
+                        longitude: 0,
+                        altitude: 0
+                    })
+                }
             })
 
             this.running = true
