@@ -32,6 +32,6 @@
   "homepage": "https://github.com/ITISEnricoFermi/node-breakout-v3#readme",
   "dependencies": {
     "node-nmea": "^2.0.0",
-    "serialport": "^7.1.5"
+    "serialport": "^9.0.4"
   }
 }
